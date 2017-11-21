@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Slider</title>
+        <link rel="stylesheet" type="text/css" href="css/reset.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+		<link href="css/font.css" rel="stylesheet">
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.1/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="js/jquery.beforeafter-1.4.js"></script>
+		<script type="text/javascript" src="js/script.js"></script>
+    </head>
+    <body>
+        <div class="main_area">
+        	<div class="header">
+        		<input type="button" class="btn red">
+        		<input type="button" class="btn yellow">
+        		<input type="button" class="btn green">
+        		<button class="load-photo">+ Load Photo</button>
+        	</div>
+        	<div class="filter">
+        		<div id="container">
+					<div><img alt="before" src="img/before_wallhaven-162801.jpg" width="846" height="438" /></div>
+					<div><img alt="after" src="img/wallhaven-162801.jpg" width="846" height="438" /></div>
+				</div>
+        	</div>
+        	<div class="tools">
+				<button class="list">&nbsp;</button>
+				<span>Realistic</span>
+				<input type="range">
+				<span>Vivid</span>
+				<button type="button" class="apply">Apply to All</button>
+        	</div>
+        	<div class="photo">
+				<div class="wrapper-photo">
+					<img src="img/wallhaven-162801.jpg" class="image active">
+					<img src="img/wallhaven-163524.jpg" class="image">
+					<img src="img/wallhaven-23733.jpg" class="image">
+					<img src="img/wallhaven-252306.jpg" class="image">
+				</div>
+        	</div>
+        </div>
+          <script type="text/javascript">
+			$(function(){
+				$('#container').beforeAfter({
+					showFullLinks : false
+				});
+				$('#container').addClass("container")
+			});
+		  </script>
+    </body>
+</html>

@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'CorsicaSX-Regular';
+  src: url('../fonts/CorsicaSX-Regular.eot');
+  src: url('../fonts/CorsicaSX-Regular.woff2') format('woff2'),
+       url('../fonts/CorsicaSX-Regular.woff') format('woff'),
+       url('../fonts/CorsicaSX-Regular.ttf') format('truetype'),
+       url('../fonts/CorsicaSX-Regular.svg#CorsicaSX-Regular') format('svg'),
+       url('../fonts/CorsicaSX-Regular.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
